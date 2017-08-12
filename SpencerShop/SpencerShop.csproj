@@ -14,4 +14,52 @@
   </ItemGroup>
 
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Views\Accounts\" />
+    <Folder Include="Views\Cart\" />
+    <Folder Include="Views\Products\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Accounts\Login.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\Accounts\Login.cshtml">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>Login.cs</LastGenOutput>
+    </None>
+    <None Include="Views\Accounts\Register.cshtml">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>Register.cs</LastGenOutput>
+    </None>
+    <None Include="Views\Cart\Checkout.cshtml">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>Checkout.cs</LastGenOutput>
+    </None>
+    <None Include="Views\Products\Product.cshtml">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>Product.cs</LastGenOutput>
+    </None>
+    <None Include="Views\Products\Products.cshtml">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>Products.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Views\Accounts\Login.cs">
+      <DependentUpon>Login.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Accounts\Register.cs">
+      <DependentUpon>Register.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cart\Checkout.cs">
+      <DependentUpon>Checkout.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Products\Product.cs">
+      <DependentUpon>Product.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Products\Products.cs">
+      <DependentUpon>Products.cshtml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>
